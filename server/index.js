@@ -7,6 +7,7 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
+//GET route for all users in the database
 app.get('/api/users', (req, res) => {
   db.find({})
     .then((allUsers) => {
