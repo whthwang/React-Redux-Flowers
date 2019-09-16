@@ -7,6 +7,7 @@ export const fetchAllUsers = (allUsers) => {
   }
 };
 
+//selectUser will be called with an onClick listener
 export const selectUser = (user) => {
   return {
     type: "SELECT_USER",
