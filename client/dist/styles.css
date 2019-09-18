@@ -1,0 +1,15 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:	#FAEBD7;
+}
+
+.names:hover {
+text-decoration: underline;
+font-weight: bold;
+cursor: pointer;
+}
+
+.user-details {
+  border: 1px;
+  border-color: black;
+}

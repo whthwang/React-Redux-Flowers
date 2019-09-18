@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/Users')
+mongoose.connect('mongodb://localhost/Users', { useUnifiedTopology: true })
 const db = mongoose.connection;
 
 db.on('error', () => { console.log('database failed to connect') });

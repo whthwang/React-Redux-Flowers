@@ -3,15 +3,21 @@ const initialState = {
   selectedUser: null
 }
 
-//since there is only one reducer, there is no need to call combineReducer
 export const userReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "FETCH_USERS":
+    case "FETCH_USERS_SUCCESS":
+      let storage = {};
+      for (let i of action.payload) {
+        storage[i.id] = i;
+      }
       return {
-        allUsers: [...action.payload]
+        allUsers: storage
       };
+    case "FETCH_USERS_FAILURE":
+      return state;
     case "SELECT_USER":
       return {
+        allUsers: state.allUsers,
         selectedUser: action.payload
       };
     default:
