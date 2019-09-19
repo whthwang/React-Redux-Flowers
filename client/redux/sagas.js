@@ -16,6 +16,5 @@ function* fetchUsersAsync() {
 };
 
 export function* watchFetchUsersAsync() {
-  console.log('watchFetchUsersAsync fired');
   yield takeEvery(FETCH_USERS, fetchUsersAsync);
 };

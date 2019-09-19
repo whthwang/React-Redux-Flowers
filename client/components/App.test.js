@@ -1,11 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
 import UserDetails from './UserDetails';
 import Users from './Users';
 import axios from 'axios';
 
-//import below for axios test
 import "regenerator-runtime/runtime";
 
 describe('Test for React components', () => {
@@ -43,7 +41,7 @@ describe('Tests for snapshots', () => {
   
 });
 
-describe('Backend Tests', () => {
+describe('Backend Test', () => {
   it('Should return 3 users in the database', () => {
     expect.assertions(1);
     axios.get('localhost:3000/api/users')

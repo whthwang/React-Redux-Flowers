@@ -10,7 +10,6 @@
     4. current location
     5. description
 
-
 **Tech stack**
 1. React
 2. Redux
