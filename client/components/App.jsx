@@ -9,10 +9,12 @@ class App extends Component {
     this.handleSelect = this.handleSelect.bind(this);
   }
 
+  //upon mounting, makes the API call to fetch users from the database and store in redux store
   componentDidMount() {
     this.props.fetchAll();
   }
 
+  //when selecting user, update the redux store selectedUser with the user object
   handleSelect(e) {
     let { selectUser, allUsers } = this.props;
     let person = allUsers[e.target.id];
