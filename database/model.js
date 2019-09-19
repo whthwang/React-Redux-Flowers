@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema({
   description: String
 });
 
-//created a User model and exporting this instance to store data
 const User = mongoose.model('Users', userSchema);
 
 module.exports = User;
