@@ -18,16 +18,4 @@ app.get('/api/users', (req, res) => {
     });
 });
 
-//GET route for user by ID
-app.get('/api/users/:id', (req, res) => {
-  let { id } = req.params;
-  db.find({ id })
-  .then((user) => {
-    res.status(200).send(user);
-  })
-  .catch((error) => {
-    res.status(404).send(`GET user by ID failed: ${error}`);
-  });
-});
-
 app.listen(port, () => { console.log(`server is running on port ${port}`) });
