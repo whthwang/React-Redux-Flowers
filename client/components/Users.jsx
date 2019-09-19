@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Users = (props) => {
-  const userArray = Object.values(props.allUsers);
+const Users = ({ allUsers, handleSelect }) => {
+  const userArray = Object.values(allUsers);
   return (
     <div>
       {userArray ? userArray.map((user) => {
         return (
           <div key={user.id}>
-            <div onClick={props.handleSelect}>
+            <div onClick={handleSelect}>
               <div className='names' id={user.id}>{user.first} {user.last}</div>
             </div>
           </div>

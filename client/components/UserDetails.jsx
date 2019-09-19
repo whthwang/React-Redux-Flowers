@@ -1,8 +1,8 @@
 import React from 'react';
 
-const UserDetails = (props) => {
-  if (props.user) {
-    const { first, last, age, description, location } = props.user;
+const UserDetails = ({ user }) => {
+  if (user) {
+    const { first, last, age, description, location } = user;
     return (
       <div className='user-details'>
         <div>

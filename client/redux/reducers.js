@@ -1,7 +1,7 @@
 import { SELECT_USER, FETCH_USERS_SUCCESS, FETCH_USERS_FAILURE } from './constants.js';
 
 const initialState = {
-  allUsers: [],
+  allUsers: {},
   selectedUser: null
 }
 

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for rendered components expect UserDetails component to match snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`Test for rendered components expect Users component to render 1`] = `1`;
+
+exports[`Tests for snapshots expect UserDetails component to match snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`Tests for snapshots expect Users component to match snapshot 1`] = `ShallowWrapper {}`;
