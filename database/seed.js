@@ -27,4 +27,5 @@ const seedData = [
   }
 ]
 
+//seeds the database
 db.insertMany(seedData).then(() => { console.log('database successfully seeded') }).catch((error) => { console.log(`failed to seed ${error}`) });
