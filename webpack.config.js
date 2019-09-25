@@ -15,9 +15,6 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           presets: ["@babel/preset-env",
-            {
-              "useBuiltIns": "usage"
-            },
             "@babel/preset-react"]
         }
       },
